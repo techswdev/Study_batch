@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: local
+
+---
+spring:
+  profiles: local
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/spring_batch
+      username: root
+      password: 1234567890
+      driver-class-name: com.mysql.jdbc.Driver
