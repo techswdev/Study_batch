@@ -1,7 +1,11 @@
 spring:
   profiles:
     active: local
-
+  batch:
+    job:
+      names: ${job.name:NONE}
+      # job.name Of Program Agurment != null ? job.name : NONE
+      # if job.name => NONE (No batch operation)
 ---
 spring:
   profiles: local
